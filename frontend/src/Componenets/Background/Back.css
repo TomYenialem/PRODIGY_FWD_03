@@ -1,0 +1,13 @@
+.bg{
+    background-image: url('../../assets/images/bg-4.jpg');
+    height: 580px;
+    background-position: center;
+    padding: 50px 20px;
+}
+
+@media(min-width:768px){
+    .bg h1{
+        font-size: 55px;
+    font-weight: bold;
+    }
+}
