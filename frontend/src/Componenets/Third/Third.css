@@ -1,0 +1,22 @@
+.third{
+    background-image: url('../../assets/images/b2.jpg');
+    height: 400px;
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:  50px;
+    
+  
+}
+.third a{
+    border-bottom: 6px solid  #fbbf24;
+    margin: 40px 0px;
+    font-size: 22px;
+    border-width: 10px;
+
+}
+@media(min-width:768px){
+.third{
+    padding: 100px;
+}
+}

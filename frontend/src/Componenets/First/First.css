@@ -1,0 +1,46 @@
+.right {
+  background-image: url("../../assets/images/px3.jpg");
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  padding: 70px 20px;
+}
+.left {
+  background-image: url("../../assets/images/two.jpg");
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  padding: 70px 20px;
+}
+.right:hover,
+.left:hover {
+  transform: scale(1.02);
+}
+.mt{
+  padding-top: 200px;
+}
+.home-btn{
+background-color: #1e293b;
+}
+.home-btn:hover{
+  background-color:  #fbbf24;;
+}
+.row {
+  gap: 30px;
+}
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  vertical-align: bottom;
+}
+.off{
+  text-shadow:  2px 2px 4px rgba(0, 0, 0, 0.5);;
+}
+
+@media (max-width: 768px) {
+  .right,
+  .left {
+    width: 90%;
+    height: 400px;
+  }
+}

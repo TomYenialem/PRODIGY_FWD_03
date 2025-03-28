@@ -15,6 +15,7 @@ import { Route, Routes, Router, useNavigate } from "react-router-dom";
 // import Login from "./Componenets/Login/Login";
 import ToHome from "./Componenets/ToHome/ToHome";
 import ToOffice from "./Componenets/ToOffice/ToOffice";
+import Home from "./Componenets/Home/Home";
 // import Scroll from "./Componenets/ScrollTop/Scroll";
 // import Payment from "./Componenets/Payment/Payment";
 // import Protected from "./Componenets/ProtectedRoute/Protected";
@@ -46,13 +47,13 @@ function App() {
       {/* <Nav />
       <Scroll /> */}
       <Routes>
-        {/* <Route path="/" element={<Home />} />
-        <Route path="/shop" element={<Shop />} />
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/shop" element={<Shop />} />
         <Route path="/details/:productId" element={<Detail />} />;
         <Route path="/details2/:pid" element={<ShopDetail />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/login" element={<Login />} /> */}
+        <Route path="/login" element={<Login />} />  */}
         <Route path="/toHome" element={<ToHome />} />
         <Route path="/office" element={<ToOffice />} />
         {/* <Route

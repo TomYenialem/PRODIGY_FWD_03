@@ -1,0 +1,28 @@
+.text-container p{
+margin: 10px 5px;
+text-align: center;
+font-size: 14px;
+}
+.text-container{
+    line-height: 1.1;
+    padding: 42px 10px;
+}
+.one,.three,.two{
+    background-color:#1f2937;
+    color:white;
+    opacity: 0.9;
+}
+.one:hover,.two:hover,.three:hover{
+   opacity: 1; 
+}
+@media(min-width:400px){
+    .text-container{
+ 
+    padding: 42px 60px;
+}
+@media(min-width:768px){
+    .text-container{
+  
+    padding: 40px;
+}
+}}
