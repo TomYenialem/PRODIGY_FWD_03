@@ -4,9 +4,9 @@ import { Toaster } from "react-hot-toast";
 import { useContext, useEffect } from "react";
 
 import { Route, Routes, Router, useNavigate } from "react-router-dom";
-// import Nav from "./Componenets/Navbar/Nav";
+import Nav from "./Componenets/Navbar/Nav";
 // import Shop from "./Componenets/Shop/Shop";
-// import Footer from "./Componenets/Footer/Footer";
+import Footer from "./Componenets/Footer/Footer";
 // import Home from "./Componenets/Home/Home";
 // import Detail from "./Componenets/Details/Detail";
 // import ShopDetail from "./Componenets/ShopDetail/ShopDetail";
@@ -44,8 +44,8 @@ function App() {
   // );
   return (
     <>
-      {/* <Nav />
-      <Scroll /> */}
+       <Nav />
+      {/* <Scroll />  */}
       <Routes>
         <Route path="/" element={<Home />} />
         {/* <Route path="/shop" element={<Shop />} />
@@ -68,7 +68,7 @@ function App() {
         /> */}
       </Routes>
       {/* <Toaster position="top-right" /> */}
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

@@ -1,0 +1,24 @@
+
+.footer{
+    background-color: #1f2937;
+     color:  #fbbf24;
+}
+.footer h1{
+    font-size: 27px;
+    text-transform: capitalize;
+}
+.second-row h3{
+font-size: 20px;
+}
+.second-row p,a,span{
+    margin: 2px 0px;
+    color: #94a3b8;
+    text-decoration: none;
+   
+}
+.second-row h2{
+font-size: 22px;
+}
+.second-row p:hover,a:hover{
+    /* color: white; */
+}
