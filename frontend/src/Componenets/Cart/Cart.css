@@ -1,0 +1,58 @@
+/* .delete - cursor pointer for delete icon */
+.delete {
+  cursor: pointer;
+}
+
+/* .cart - background for the cart */
+.cart {
+  background-color: #f1f5f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* .total-carts - space out the rows for better readability */
+.total-carts {
+  line-height: 2.1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .payment summary styling for total rows */
+.total-carts .col-md {
+  flex: 1;
+  padding: 5px;
+}
+
+.titles-cart {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .titles-cart {
+
+    display: flex;
+   
+  
+    padding-top: -10px;
+    padding-left: 30px;
+  
+
+  }
+  .titles-cart span{
+    text-align: center;
+  }
+  .carttt {
+    display: flex;
+ 
+     gap: 30px;
+    align-items: center;
+    /* justify-content: center; */
+  }
+
+  /* Disabled button */
+  button:disabled {
+    cursor: not-allowed;
+  }
+}

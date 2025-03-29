@@ -73,7 +73,8 @@ border-bottom: 1px solid rgb(27, 23, 18);
 }
 .num {
   position: absolute;
-
+  color:#fbbf24 !important;
+  font-weight: 900;
   top: -10px;  
   right: 7px;
   font-size: 17px;

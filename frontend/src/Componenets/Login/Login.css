@@ -1,0 +1,65 @@
+.conatct-bg{
+    background-image: url(../../assets/images/breadcrumb.png);
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    background-color: #1e293b;
+    padding: 90px 190px;
+    /* margin-bottom: 550px; */
+ 
+}
+.log{
+    margin-top: 150px;
+    height: auto;
+}
+@media(max-width:600px){
+    .conatct-bg{
+ 
+    padding: 40px;
+ 
+}
+}
+.conatct-bg{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 100px 30px;
+    margin-top: 30px;
+}
+.break{
+    width: 70px;
+    font-weight: 900;
+    border-bottom: 4px solid black;
+
+}
+.rejester{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+form input:focus,
+form button:focus {
+  outline: none;
+}
+
+
+.slash{
+    font-weight: bold;
+    font-size: 22px;
+    color: black;
+}
+
+.addBorder{
+   border-bottom: 3px solid green;
+  
+}
+.password{
+    position: relative;
+}
+.eye{
+    position: absolute;
+    right: 5px;
+    top: 30px;
+}

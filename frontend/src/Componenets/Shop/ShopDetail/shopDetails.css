@@ -1,0 +1,23 @@
+.shop-bottom-pro {
+    width: 50vw;
+    overflow-x: auto; 
+    white-space: nowrap; 
+}
+
+.bottom-product-images {
+    display: flex;
+    gap: 10px;
+}
+
+.bottom-product-images img {
+    width: 100px;
+}
+
+@media(max-width: 768px) {
+    .shop-bottom-pro {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+   
+}
