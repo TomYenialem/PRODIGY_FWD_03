@@ -17,13 +17,13 @@ import ToHome from "./Componenets/Home/ToHome/ToHome";
 import ToOffice from "./Componenets/Home/ToOffice/ToOffice";
 import Home from "./Componenets/Home/Home";
 
-// import Payment from "./Componenets/Payment/Payment";
-// import Protected from "./Componenets/ProtectedRoute/Protected";
-// import { contextApi } from "./Componenets/Context/Context";
+import Payment from "./Componenets/Payment/Payment";
+import Protected from "./Componenets/ProtectedRoute/Protected";
+import { contextApi } from "./Componenets/Context/Context";
 
-// import { auth } from "./Componenets/Utility/Firebase";
-// import { Elements } from "@stripe/react-stripe-js";
-// import { loadStripe } from "@stripe/stripe-js";
+import { auth } from "./Componenets/Utility/Firebase";
+import { Elements } from "@stripe/react-stripe-js";
+import { loadStripe } from "@stripe/stripe-js";
 
 function App() {
   const {pathname}=useLocation()
@@ -32,26 +32,25 @@ function App() {
   },[pathname])
 
 
-  // const { setAuthUser } = useContext(contextApi);
-  // useEffect(() => {
-  //   auth.onAuthStateChanged((authUser) => {
-  //     if (authUser) {
-  //       setAuthUser(authUser);
-  //       console.log(authUser);
-  //     } else {
-  //       console.log("no user is logged in");
-  //       setAuthUser(null);
-  //     }
-  //   });
-  // }, []);
+  const { setAuthUser } = useContext(contextApi);
+  useEffect(() => {
+    auth.onAuthStateChanged((authUser) => {
+      if (authUser) {
+        setAuthUser(authUser);
+        console.log(authUser);
+      } else {
+        console.log("no user is logged in");
+        setAuthUser(null);
+      }
+    });
+  }, []);
 
-  // const publicKey = loadStripe(
-  //   "pk_test_51QcSTFA2AFtkKJ4AGcx7m8pAmX1q590ZtjkxAqJvgW9hqFDCC4vKMcvI4658peUUOIUceG4hwwWL1Sf9e1xj6P4d00j1Nl7Jfi"
-  // );
+  const publicKey = loadStripe(
+    "pk_test_51QcSTFA2AFtkKJ4AGcx7m8pAmX1q590ZtjkxAqJvgW9hqFDCC4vKMcvI4658peUUOIUceG4hwwWL1Sf9e1xj6P4d00j1Nl7Jfi"
+  );
   return (
     <>
        <Nav />
-      {/* <Scroll />  */}
       <Routes>
         <Route path="/" element={<Home />} />
         {<Route path="/shop" element={<Shop />} />}
@@ -62,18 +61,18 @@ function App() {
         <Route path="/login" element={<Login />} />  
         <Route path="/toHome" element={<ToHome />} />
         <Route path="/office" element={<ToOffice />} />
-        {/* <Route
+        <Route
           path="/payments"
           element={
-            // <Protected msg={'please login to pay'} rediretTo={'/payments'}>
+            <Protected msg={'please login to pay'} rediretTo={'/payments'}>
             <Elements stripe={publicKey}>
               <Payment />
             </Elements>
-            // </Protected>
+            </Protected>
           }
-        /> */}
+        />
       </Routes>
-      {/* <Toaster position="top-right" /> */}
+      <Toaster position="top-right" />
       <Footer />
     </>
   );

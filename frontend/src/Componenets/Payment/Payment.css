@@ -1,0 +1,56 @@
+.payment {
+  display: flex;
+  width: 90%;
+  margin: 30px auto;
+  justify-content: space-between;
+  flex-wrap: wrap
+}
+
+.address {
+  font-size: 24px;
+  color: #fbbf24;
+  margin-bottom: 20px; /* Added margin for spacing */
+}
+
+.stripe {
+  width: 100%; /* Ensure the stripe section takes up full width on smaller screens */
+  margin: 0 auto;
+  max-width: 600px; /* Limit maximum width to keep it from stretching too wide */
+}
+
+.pay-btn {
+  padding: 10px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 70px auto;
+  max-width: 100%; /* Prevents the button from going beyond the container */
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .payment {
+    width: 60%; /* Ensure payment container takes full width */
+    margin: 20px 0; /* Adjust the margin for smaller screens */
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    padding: 0 10px; /* Add padding to avoid content touching the edges */
+  }
+
+  .stripe {
+    width: 60%;
+    margin: 0 auto;
+  
+  }
+
+  .address {
+    font-size: 20px; /* Slightly smaller font size on mobile */
+  }
+
+  .pay-btn {
+    padding: 10px 40px; /* Adjust button padding for smaller screens */
+  }
+}
