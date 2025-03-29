@@ -1,0 +1,21 @@
+.overline-text{
+    text-decoration: line-through;
+}
+.cart-numbers{
+    border:  1px solid gray;
+    width: 80px;
+    padding: 7px;
+}
+.up,.down{
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 5px;
+}
+.down{
+    cursor: pointer;
+}
+.bottom-pro{
+display: flex;
+width: 100%;
+gap: 10px;
+}

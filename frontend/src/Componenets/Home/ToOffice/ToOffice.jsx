@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import { contextApi } from "../Context/Context";
+import { contextApi } from "../../Context/Context";
 import { FaCartPlus } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa6";
-import homePages from "../../assets/images/asset";
+import homePages from "../../../assets/images/asset";
 import "./ToOffice.css";
 
 export default function ToOffice() {

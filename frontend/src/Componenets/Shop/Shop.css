@@ -1,0 +1,56 @@
+.shop{
+    background-image: url('../../assets/images/y5.jpg');
+    background-repeat: no-repeat;
+    background-position: left;
+background-size: cover;
+    height: 350px;
+    background-blend-mode:hard-light;
+   
+   
+}
+
+/* .shop-heade
+    padding-top: 120px;
+    padding-left: 50px;
+} */
+.shop-list li,.filer-price li,.filter-color li{
+    padding-bottom: 15px;
+    list-style-type: square;
+    cursor: pointer;
+}
+.add-color{
+   text-decoration: underline;
+   text-underline-offset: 7px;
+   text-decoration-color: red;
+   text-decoration-thickness: 3px;
+   border-top-right-radius: 10px;
+    
+    
+}
+
+.search-items{
+   /* background-color: red; */
+   display: flex;
+   justify-content: end;
+   
+}
+.search-items input{
+    position: relative;
+    padding: 3px 8px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.search-items .search-icons{
+    position: absolute;
+    right: 7%;
+}
+
+.shop-header{
+    padding-top: 120px;
+    padding-left: 50px;
+    color: rgb(44, 36, 36) !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.active{
+    color: red;
+}

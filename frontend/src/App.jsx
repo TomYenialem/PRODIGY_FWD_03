@@ -3,18 +3,19 @@ import "./App.css";
 import { Toaster } from "react-hot-toast";
 import { useContext, useEffect } from "react";
 
-import { Route, Routes, Router, useNavigate } from "react-router-dom";
-import Nav from "./Componenets/Navbar/Nav";
-// import Shop from "./Componenets/Shop/Shop";
-import Footer from "./Componenets/Footer/Footer";
+import { Route, Routes, Router, useNavigate, useLocation } from "react-router-dom";
+
+import Nav from "./Componenets/Home/Navbar/Nav";
+import Shop from "./Componenets/Shop/Shop";
+import Footer from "./Componenets/Home/Footer/Footer";
 // import Home from "./Componenets/Home/Home";
-// import Detail from "./Componenets/Details/Detail";
+import Detail from "./Componenets/Shop/Details/Detail";
 // import ShopDetail from "./Componenets/ShopDetail/ShopDetail";
 // import Cart from "./Componenets/Cart/Cart";
 // import Contact from "./Componenets/Contacts/Contact";
 // import Login from "./Componenets/Login/Login";
-import ToHome from "./Componenets/ToHome/ToHome";
-import ToOffice from "./Componenets/ToOffice/ToOffice";
+import ToHome from "./Componenets/Home/ToHome/ToHome";
+import ToOffice from "./Componenets/Home/ToOffice/ToOffice";
 import Home from "./Componenets/Home/Home";
 // import Scroll from "./Componenets/ScrollTop/Scroll";
 // import Payment from "./Componenets/Payment/Payment";
@@ -26,6 +27,12 @@ import Home from "./Componenets/Home/Home";
 // import { loadStripe } from "@stripe/stripe-js";
 
 function App() {
+  const {pathname}=useLocation()
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[pathname])
+
+  
   // const { setAuthUser } = useContext(contextApi);
   // useEffect(() => {
   //   auth.onAuthStateChanged((authUser) => {
@@ -48,12 +55,12 @@ function App() {
       {/* <Scroll />  */}
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/shop" element={<Shop />} />
+        {<Route path="/shop" element={<Shop />} />}
         <Route path="/details/:productId" element={<Detail />} />;
-        <Route path="/details2/:pid" element={<ShopDetail />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/login" element={<Login />} />  */}
+        {/* <Route path="/details2/:pid" element={<ShopDetail />} /> */}
+        {/* <Route path="/cart" element={<Cart />} /> */}
+        {/* <Route path="/contact" element={<Contact />} /> */}
+        {/* <Route path="/login" element={<Login />} />   */}
         <Route path="/toHome" element={<ToHome />} />
         <Route path="/office" element={<ToOffice />} />
         {/* <Route

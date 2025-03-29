@@ -2,7 +2,7 @@ import React, { useContext, useRef, useState } from "react";
 
 import "./Main.css";
 import { Link } from "react-router-dom";
-import { contextApi } from "../Context/Context";
+import { contextApi } from "../../Context/Context";
 import { FaCartPlus } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import toast from "react-hot-toast";

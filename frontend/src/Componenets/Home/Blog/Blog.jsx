@@ -1,7 +1,7 @@
 import React from "react";
-import image from "../../assets/images/px3.jpg";
-import image2 from "../../assets/images/px2.jpg";
-import image3 from "../../assets/images/px.jpg";
+import image from "../../../assets/images/px3.jpg";
+import image2 from "../../../assets/images/px2.jpg";
+import image3 from "../../../assets/images/px.jpg";
 import './Blog.css'
 
 export default function () {

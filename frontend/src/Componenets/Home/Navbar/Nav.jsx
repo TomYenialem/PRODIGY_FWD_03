@@ -3,11 +3,11 @@ import "./Nav.css";
 import { BiCart } from "react-icons/bi";
 import { BsPerson } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import { contextApi } from "../Context/Context";
-import logo from "../../assets/images/bed/logo.jpg";
+import { contextApi } from "../../Context/Context";
+import logo from "../../../assets/images/bed/logo.jpg";
 import { CgMenuRightAlt } from "react-icons/cg";
 import { IoMdCart } from "react-icons/io";
-import { auth } from "../Utility/Firebase";
+import { auth } from "../../Utility/Firebase";
 
 export default function () {
   const handleNavLinkClick = () => {
