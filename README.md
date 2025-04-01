@@ -1,6 +1,7 @@
 # Furniture E-Commerce Website
 
-**Live Demo:** [Furniture E-Commerce Demo](https://furniturehoemoffice.netlify.app/)
+**Live Demo:** [Furniture E-Commerce Demo](https://furniturehoemoffice.netlify.app/)<img width="943" alt="fr" src="https://github.com/user-attachments/assets/95840f4f-3ed7-4bd4-a934-012c4f74a1b9" />
+
 
 A full-stack e-commerce platform for ordering and purchasing furniture online. This project allows users to browse furniture products, log in via Firebase Authentication, and securely make payments using Stripe. The website is built using React, Firebase, Stripe, and Express.
 
